@@ -1,3 +1,4 @@
+
 document.getElementById("get-data").addEventListener("click", loadData);
 
 function loadData() {
