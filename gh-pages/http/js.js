@@ -20,5 +20,9 @@ function loadData() {
         }
     }
 
+    xhr.onprogress = function () {
+        console.log('readyState:  ' + xhr.readyState)
+    }
+
     xhr.send();
 }
