@@ -5,10 +5,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>API XHR</title>
+    <style>
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        form div {
+            margin-bottom: 40px;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul li {
+            list-style: none;
+            width: 200px;
+            margin: 5px;
+            font-size: 20px;
+        }
+
+        form label {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        form input {
+            width: 300px;
+            height: 30px;
+
+        }
+
+        button {
+            width: 300px;
+            height: 35px;
+            background-color: antiquewhite;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        form ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form ul li {
+            width: 460px;
+            margin: 20px;
+            font-size: 22px;
+            color: brown;
+            font-weight: 900;
+        }
+    </style>
 </head>
 
 <body>
+
+    <div class="container">
+        <h2>Chack Noris Jokes</h2>
+        <h3>Change Jokes</h3>
+        <ul>
+            <li>Walter White</li>
+            <li>Skyler White</li>
+            <li>Jesse Pinkman</li>
+            <li>Saul Goodman</li>
+            <li>Mike Ehrmantraut</li>
+            <li>Jimmy McGill</li>
+            <li>Chuck McGill</li>
+        </ul>
+        <form action="">
+            <div class="">
+                <label for="text"> Jokes</label><br />
+                <input type="text" id="text">
+            </div>
+            <div class="">
+                <button id="get-jokes">Get Jokes</button>
+            </div>
+
+            <ul id="jokes">
+
+            </ul>
+        </form>
+    </div>
     <script src="js.js"></script>
 </body>
 
