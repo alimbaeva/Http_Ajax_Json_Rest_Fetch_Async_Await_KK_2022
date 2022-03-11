@@ -5,7 +5,7 @@
 https://alimbaeva.github.io/Http_Ajax_Json_Rest_Fetch_Async_Await_KK_2022/pg-pages/http/index.html
 
 
-https://alimbaeva.github.io/Http_Ajax_Json_Rest_Fetch_Async_Await_KK_2022/pg-pages/xml/index.html
+https://alimbaeva.github.io/Http_Ajax_Json_Rest_Fetch_Async_Await_KK_2022/pg-pages/xhr/index.html
 
 
 ## Основы XMLHttpRequest
