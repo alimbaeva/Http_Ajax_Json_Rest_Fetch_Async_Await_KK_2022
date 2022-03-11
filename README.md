@@ -190,3 +190,111 @@ const unsigned short DONE = 4; // запрос завершён
 
 ## HTTP-заголовки
 
+
+XMLHttpRequest умеет как указывать свои заголовки в запросе, так и читать присланные в ответ.
+
+Для работы с HTTP-заголовками есть 3 метода:
+
+**_setRequestHeader(name, value)_**
+Устанавливает заголовок name запроса со значением value.
+
+Например:
+
+
+```
+xhr.setRequestHeader('Content-Type', 'application/json');
+```
+
+
+**_getResponseHeader(name)_**
+Возвращает значение заголовка ответа name, кроме Set-Cookie и Set-Cookie2.
+
+Например:
+
+```
+xhr.getResponseHeader('Content-Type')
+```
+
+**_getAllResponseHeaders()_**
+Возвращает все заголовки ответа, кроме Set-Cookie и Set-Cookie2.
+
+Заголовки возвращаются в виде единой строки, например:
+
+```
+Cache-Control: max-age=31536000
+Content-Length: 4260
+Content-Type: image/png
+Date: Sat, 08 Sep 2012 16:53:16 GMT
+```
+
+
+## Таймаут
+
+
+
+Максимальную продолжительность асинхронного запроса можно задать свойством timeout:
+
+
+```
+xhr.timeout = 30000; // 30 секунд (в миллисекундах)
+```
+
+При превышении этого времени запрос будет оборван и сгенерировано событие ontimeout:
+
+```
+xhr.ontimeout = function() {
+  alert( 'Извините, запрос превысил максимальное время' );
+}
+```
+
+## Полный список событий
+
+Современная спецификация предусматривает следующие события по ходу обработки запроса:
+
+- loadstart – запрос начат.
+- progress – браузер получил очередной пакет данных, можно прочитать текущие полученные данные в responseText.
+- abort – запрос был отменён вызовом xhr.abort().
+- error – произошла ошибка.
+- load – запрос был успешно (без ошибок) завершён.
+- timeout – запрос был прекращён по таймауту.
+- loadend – запрос был завершён (успешно или неуспешно)
+
+
+Используя эти события можно более удобно отслеживать загрузку (onload) и ошибку (onerror), а также количество загруженных данных (onprogress).
+
+Ранее мы видели ещё одно событие – readystatechange. Оно появилось гораздо раньше, ещё до появления текущего стандарта.
+
+В современных браузерах от него можно отказаться в пользу других, необходимо лишь, как мы увидим далее, учесть особенности IE8-9.
+
+
+
+# Мы разобрали следующие методы XMLHttpRequest:
+
+- open(method, url, async, user, password)
+- send(body)
+- abort()
+- setRequestHeader(name, value)
+- getResponseHeader(name)
+- getAllResponseHeaders()
+
+
+## Свойства XMLHttpRequest:
+
+- timeout
+- responseText
+- responseXML
+- status
+- statusText
+
+
+
+## События:
+
+- onreadystatechange
+- ontimeout
+- onerror
+- onload
+- onprogress
+- onabort
+- onloadstart
+- onloadend
