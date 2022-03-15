@@ -46,3 +46,19 @@ promise3.then((result) => {
 }).catch((error) => {
     console.error(error)
 })
+
+
+// Все это коды работает АСИНХРОННО !!!
+
+setTimeoutPromise(5000).then(() => {
+    console.log("Promise");
+});
+
+function setTimeoutPromise(duration) {
+    return new Promise((resolve, reject) => {
+        setTimeout(resolve, duration);
+    })
+};
+
+console.log("Hello!")
+console.log("Hello!!!!!!!!!!!!!!!")
