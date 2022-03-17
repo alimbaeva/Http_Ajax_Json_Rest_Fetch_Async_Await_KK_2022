@@ -3,3 +3,44 @@
     margin: 0 auto;
     text-align: center;
 }
+
+#output{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart{
+    width: 300px;
+    margin: 30px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.foto{
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    border: 2px solid brown;
+    border-radius: 50%;
+    
+}
+
+.login{
+    color: brown;
+}
+
+#btn-link{
+    width: 70%;
+    height: 30px;
+    margin: 30px;
+    text-align: center;
+    background-color: white;
+    font-weight: 900;
+    border-radius: 10px;
+
+}
+#btn-link a{
+    color: brown;
+    text-decoration: none;
+}

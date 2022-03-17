@@ -17,6 +17,7 @@ function getAPI() {
                 const login = document.createElement("h1");
                 login.setAttribute("class", "login");
                 const aLink = document.createElement("a")
+                aLink.setAttribute("href", `${user.html_url}`)
                 const button = document.createElement("button");
                 button.setAttribute("id", "btn-link")
 
