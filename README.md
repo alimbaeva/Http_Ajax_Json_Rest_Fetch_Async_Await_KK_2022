@@ -1,6 +1,8 @@
 # Http_Ajax_Json_Rest_Fetch_Async_Await_KK_2022
 
+https://alimbaeva.github.io/Http_Ajax_Json_Rest_Fetch_Async_Await_KK_2022/gh-pages/fetchTask1/index.html
 
+https://alimbaeva.github.io/Http_Ajax_Json_Rest_Fetch_Async_Await_KK_2022/gh-pages/fetch/index.html
 
 https://alimbaeva.github.io/Http_Ajax_Json_Rest_Fetch_Async_Await_KK_2022/gh-pages/http/index.html
 
