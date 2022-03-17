@@ -19,22 +19,24 @@ function product() {
                 const divText = document.createElement("div");
                 divText.setAttribute("class", "div-text");
                 const h2 = document.createElement("h2");
-                const h4 = document.createElement("h4");
+                const h3 = document.createElement("h3");
                 const p = document.createElement("p");
 
 
                 h2.innerHTML = `${data.title}`;
-                h4.innerHTML = `Price: ${data.price}`;
+                h3.innerHTML = `Price: ${data.price}`;
                 p.innerHTML = `${data.desc}`;
 
                 divImg.appendChild(img);
                 divText.appendChild(h2);
-                divText.appendChild(h4);
+                divText.appendChild(h3);
                 divText.appendChild(p);
 
 
-                output.appendChild(divImg);
-                output.appendChild(divText);
+                card.appendChild(divImg);
+                card.appendChild(divText);
+
+                output.appendChild(card)
             })
 
         })
