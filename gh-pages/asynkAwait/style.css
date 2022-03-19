@@ -1,0 +1,21 @@
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.output{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cart{
+    width: 450px;
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(58, 78, 51);
+    color: bisque;
+    border-radius: 10px;
+}
