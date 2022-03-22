@@ -8,5 +8,4 @@ db.getUser().then((user) => {
     return btn.filterBtn(user.output);
 })
 
-// ui.btnShow().
 
